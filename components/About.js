@@ -8,14 +8,15 @@ const About = () => {
             <div className="lg:space-x-5 lg:flex lg:flex-row item-center lg:-mx-4 flex flex-col-reverse text-center lg:text-left">
                 <div className="lg:px-4 lg:mt-12 ">
                     <h1 className="text-2xl font-bold text-gray-900 lg:text-5xl dark:text-white">
-                        Hey there,
+                        Hey there!,
                     </h1>
                     <div className="mt-6 text-gray-800 dark:text-white">
                         <p className="mb-4">
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                            when an unknown printer took a galley of type and scrambled it to make a
-                            type specimen book.
+                            I'm Sarah, a 20 year old Graduate Computer Science Student from the University of Auckland. 
+                            I'm a tireless vaccuum for knowledge, striving to explore what I can produce with programming. 
+                            <br/>
+                            I love it when I'm able to develop software that simplify problems and helps people. 
+                            Below are a list of all my projects. My favourite is 'syntax', my final project with four other team mates.
                         </p>
                     </div>
                 </div>
