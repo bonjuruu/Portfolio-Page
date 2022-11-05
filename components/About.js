@@ -1,22 +1,28 @@
 import React from "react"
 import Image from "next/image"
 import profile from "../public/profile.jpg"
+import { AiFillLinkedin, AiFillGithub, AiFillFilePdf } from "react-icons/ai"
 
 const About = () => {
     return (
         <div className="container px-4 mx-auto">
             <div className="lg:space-x-5 lg:flex lg:flex-row item-center lg:-mx-4 flex flex-col-reverse text-center lg:text-left">
-                <div className="lg:px-4 lg:mt-12 ">
-                    <h1 className="text-2xl font-bold text-gray-900 lg:text-5xl dark:text-white">
-                        Hey there!
+                <div className="lg:px-4 lg:mt-12 text-center">
+                    <h1 className="text-3xl font-bold text-gray-900 lg:text-5xl dark:text-white">
+                        Sarah Kyoung Kim
                     </h1>
+                    <h2 className="text-md lg:text-2xl">Graduate Computer Science Student</h2>
+                    <div className="text-2xl flex justify-center gap-2 py-2">
+                        <AiFillGithub/>
+                        <AiFillLinkedin/>
+                        <AiFillFilePdf/>
+                    </div>
                     <div className="mt-6 text-gray-800 dark:text-white">
-                        <p className="mb-4">
+                        <p className="mb-4  px-2 sm:text-center">
                             I'm Sarah, a 20 year old Graduate Computer Science Student from the University of Auckland. 
                             I'm a tireless vaccuum for knowledge, striving to explore what I can produce with programming. 
-                            <br/>
                             I love it when I'm able to develop software that simplify problems and helps people. 
-                            Below are a list of all my projects. My favourite is 'syntax', my final project with four other team mates.
+                            Below are a list of all my projects. My favourite is 'syntax'.
                         </p>
                     </div>
                 </div>
@@ -31,6 +37,7 @@ const About = () => {
                         placeholder="blur"
                     />
                 </div>
+                
             </div>
         </div>
     )

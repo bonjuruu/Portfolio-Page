@@ -3,34 +3,42 @@ import { useForm, ValidationError } from '@formspree/react';
 
 const Contact = () => {
     const [state, handleSubmit] = useForm(process.env.NEXT_PUBLIC_FORM);
+
+    const onSend = () => {
+        handleSubmit()
+
+    }
     return (<>
-        <div className="container px-4 mx-auto flex flex-col space-y-4 w-full text-sm">
-            <h2 className="text-xl font-bold lg:text-3xl ">Contact Me</h2>
-            <div className='bg-slate-200 rounded '>
+        <div className="container px-4 mx-auto flex flex-col w-full text-sm">
+            <h2 className="text-2xl font-bold lg:text-3xl mb-6">Contact Me</h2>
+            <div className='rounded-md bg-slate-100 dark:bg-zinc-800'>
                 <form onSubmit={handleSubmit}>
                     <div className='p-4 mx-auto flex flex-col space-y-4 w-full text-sm'>
-                        <div className='flex space-x-4'>
-                            <div className='flex flex-col space-y-2 basis-1/2 w-full'>
+                        <div className=' sm:flex sm:space-x-4'>
+                            <div className='flex flex-col space-y-2 sm:basis-1/2 w-full mb-4'>
                                 <label 
-                                    className='basis'
+                                    className='font-bold'
                                     htmlFor="name"
                                 >
                                     Name
                                 </label>
                                 <input  
-                                    className='rounded'
+                                    className='p-2 rounded-md border-2 border-fuchsia-800 focus:outline-none hover:border-purple-900'
                                     id="name"
                                     type="text"
                                     name="name"
                                     placeholder='Sarah Kim'
                                 />
                             </div>
-                            <div className='flex flex-col space-y-2 basis-1/2 w-full'>
-                                <label htmlFor="email">
+                            <div className='flex flex-col space-y-2 sm:basis-1/2 w-full sm:mb-4'>
+                                <label
+                                    className='font-bold' 
+                                    htmlFor="email"
+                                >
                                     Email Address
                                 </label>
                                 <input
-                                    className='rounded'
+                                    className='p-2 rounded-md border-2 border-fuchsia-800 focus:outline-none hover:border-purple-900'
                                     id="email"
                                     type="email" 
                                     name="email"
@@ -46,13 +54,13 @@ const Contact = () => {
                         </div>
                         <div className='flex flex-col space-y-2 w-full'>
                            <label 
-                                className='basis'
+                                className='font-bold'
                                 htmlFor="message"
                             >
                                 Message
                             </label>
                             <textarea
-                                className='rounded'
+                                className='p-2 rounded-md border-2 border-fuchsia-800 focus:outline-none hover:border-purple-900'
                                 id="message"
                                 name="message"
                                 rows="6"
@@ -65,9 +73,15 @@ const Contact = () => {
                             field="message"
                             errors={state.errors}
                         />
-                        <button className='flex flex-row-reverse p-4' type="submit" disabled={state.submitting}>
-                            Submit
-                        </button>
+                        <div>
+                            <button 
+                                className='float float-right rounded px-4 py-2 bg-teal-400 hover:text-white hover:bg-teal-600' 
+                                type="submit" disabled={state.submitting}
+                            >
+                                Send
+                            </button>
+                        </div>
+                        
                     </div>
                 </form>
             </div>
