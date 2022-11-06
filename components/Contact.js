@@ -23,7 +23,7 @@ const Contact = () => {
                                     Name
                                 </label>
                                 <input  
-                                    className='p-2 rounded-md border-2 border-fuchsia-800 focus:outline-none hover:border-purple-900'
+                                    className='p-2 rounded-md border-2 border-sky-500 focus:outline-none hover:border-orange-500'
                                     id="name"
                                     type="text"
                                     name="name"
@@ -32,13 +32,13 @@ const Contact = () => {
                             </div>
                             <div className='flex flex-col space-y-2 sm:basis-1/2 w-full sm:mb-4'>
                                 <label
-                                    className='font-bold' 
+                                    className="after:content-['*'] after:ml-0.5 after:text-red-500 font-bold"
                                     htmlFor="email"
                                 >
                                     Email Address
                                 </label>
                                 <input
-                                    className='p-2 rounded-md border-2 border-fuchsia-800 focus:outline-none hover:border-purple-900'
+                                    className='p-2 rounded-md border-2 border-sky-500 focus:outline-none hover:border-orange-500'
                                     id="email"
                                     type="email" 
                                     name="email"
@@ -60,7 +60,7 @@ const Contact = () => {
                                 Message
                             </label>
                             <textarea
-                                className='p-2 rounded-md border-2 border-fuchsia-800 focus:outline-none hover:border-purple-900'
+                                className='p-2 rounded-md border-2 border-sky-500 focus:outline-none hover:border-orange-500'
                                 id="message"
                                 name="message"
                                 rows="6"
@@ -75,7 +75,7 @@ const Contact = () => {
                         />
                         <div>
                             <button 
-                                className='float float-right rounded px-4 py-2 bg-teal-400 hover:text-white hover:bg-teal-600' 
+                                className='float float-right rounded px-4 py-2 bg-cyan-400 hover:text-white hover:bg-teal-600' 
                                 type="submit" disabled={state.submitting}
                             >
                                 Send

@@ -16,7 +16,7 @@ const Navigation = () => {
             <div className="container px-4 mx-auto lg:max-w-4xl flex items-center justify-between">
                 <Link href="/">
                     <a
-                        className={"font-medium tracking-wider transition-colors text-gray-900 hover:text-sky-500 dark:text-white"}
+                        className="font-medium text-lg tracking-wider transition-colors hover:text-sky-500"
                     >
                         skim.run
                     </a>
