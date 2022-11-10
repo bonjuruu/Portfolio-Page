@@ -1,8 +1,8 @@
 import React from "react"
+import Link from "next/link"
 import Image from "next/image"
 import profile from "../public/profile.jpg"
 import { AiFillLinkedin, AiFillGithub, AiFillFilePdf } from "react-icons/ai"
-import Link from "next/link"
 
 const About = () => {
     return (
@@ -12,21 +12,23 @@ const About = () => {
                     <h1 className="text-3xl font-bold text-gray-900 lg:text-5xl dark:text-white">
                         Sarah Kyoung Kim
                     </h1>
-                    <h2 className="text-md lg:text-2xl">Graduate Computer Science Student</h2>
+                    <h2 className="text-md lg:text-2xl">Computer Science Graduate</h2>
                     <div className="text-2xl flex justify-center gap-2 py-2">
-                        <a href="/" target="_blank">
-                            <AiFillGithub className="cursor-pointer hover:text-sky-500"/>
-                        </a>
-                        <a href="" target="_blank">
+                        <a href="https://www.linkedin.com/in/sarah-kyoung-kim-155804194/" target="_blank">
                             <AiFillLinkedin className="cursor-pointer hover:text-sky-500"/>
                         </a>
-                        <a href="" target="_blank">
-                            <AiFillFilePdf className="cursor-pointer hover:text-sky-500"/>
+                        <a href="https://github.com/bonjuruu" target="_blank">
+                            <AiFillGithub className="cursor-pointer hover:text-sky-500"/>
                         </a>
+                        <Link href="/Sarah_Kyoung_Kim_CV.pdf">
+                            <a href="" target="_blank">
+                                <AiFillFilePdf className="cursor-pointer hover:text-sky-500"/>
+                            </a>
+                        </Link>
                     </div>
                     <div className="mt-6 text-gray-800 dark:text-white">
                         <p className="mb-4  px-2 sm:text-center">
-                            I'm Sarah, a 20 year old Graduate Computer Science Student from the University of Auckland. 
+                            I'm Sarah, a 20 year old Computer Science Graduate from the University of Auckland. 
                             I'm a tireless vaccuum for knowledge, striving to explore what I can produce with programming. 
                             I love it when I'm able to develop software that simplify problems and helps people. 
                             Below are a list of all my projects. My favourite is 'syntax'.
@@ -44,7 +46,6 @@ const About = () => {
                         placeholder="blur"
                     />
                 </div>
-                
             </div>
         </div>
     )

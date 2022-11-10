@@ -1,4 +1,6 @@
 import React from "react";
+import Link from "next/link"
+import CV from "../public/Sarah_Kyoung_Kim_CV.pdf"
 
 const Footer = () => {
     return (
@@ -9,7 +11,7 @@ const Footer = () => {
                     <p>Copyright ©️ 2022 Sarah Kyoung Kim</p>
                     <div className="flex flex-wrap pt-2 sm:space-x-4 space-x-2 font-medium lg:pt-0">
                         <a
-                            href="#"
+                            href="https://www.linkedin.com/in/sarah-kyoung-kim-155804194/"
                             className={"transition-colors hover:text-sky-500"}
                             target="_blank"
                             rel="noreferrer"
@@ -17,21 +19,23 @@ const Footer = () => {
                             LinkedIn
                         </a>
                         <a
-                            href="#"
+                            href="https://github.com/bonjuruu"
                             className={"transition-colors hover:text-sky-500"}
                             target="_blank"
                             rel="noreferrer"
                         >
                             GitHub
                         </a>
-                        <a
-                            href="#"
+                        <Link href="/Sarah_Kyoung_Kim_CV.pdf">
+                            <a
                             className={"transition-colors hover:text-sky-500"}
                             target="_blank"
                             rel="noreferrer"
                         >
                             Resume
                         </a>
+                        </Link>
+                        
                     </div>
                 </div>
             </div>
