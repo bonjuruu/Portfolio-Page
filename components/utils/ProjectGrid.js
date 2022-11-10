@@ -1,5 +1,4 @@
 import {FiGithub, FiExternalLink} from "react-icons/fi"
-import Link from "next/link"
 
 
 const ProjectGrid = (props) => {

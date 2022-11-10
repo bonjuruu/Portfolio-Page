@@ -5,11 +5,12 @@ import Footer from "../components/Footer";
 
 function MyApp({ Component, pageProps }) {
   return <>
-    <ThemeProvider attribute="class" enableSystem={true}>
-    <Navigation/>
-    <Component {...pageProps} />
-    <Footer/>
-    </ThemeProvider>
+    <div className="bg-circuit-light dark:bg-circuit-dark">
+      <ThemeProvider attribute="class" enableSystem={true}>
+      <Component {...pageProps} />
+      </ThemeProvider>
+    </div>
+
     </>
 }
 

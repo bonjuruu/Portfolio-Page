@@ -12,7 +12,7 @@ const Contact = () => {
         <div className="container px-4 mx-auto flex flex-col w-full text-sm">
             <h2 className="text-2xl font-bold lg:text-3xl mb-6">Contact Me</h2>
             <div className='rounded-md bg-slate-100 dark:bg-zinc-800'>
-                <form onSubmit={handleSubmit}>
+                <form onSubmit={onSend}>
                     <div className='p-4 mx-auto flex flex-col space-y-4 w-full text-sm'>
                         <div className=' sm:flex sm:space-x-4'>
                             <div className='flex flex-col space-y-2 sm:basis-1/2 w-full mb-4'>

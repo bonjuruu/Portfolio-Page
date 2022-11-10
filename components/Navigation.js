@@ -12,7 +12,7 @@ const Navigation = () => {
     // When mounted on client, now we can show the UI
     useEffect(() => setMounted(true), [])
     return (
-        <div className="sticky top-0 z-20 py-2 bg-white md:py-6 md:mb-6 dark:bg-black">
+        <div className="sticky top-0 z-20 py-2 bg-white md:py-6 md:mb-6 dark:bg-neutral-900">
             <div className="container px-4 mx-auto lg:max-w-4xl flex items-center justify-between">
                 <Link href="/">
                     <a
